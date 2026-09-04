@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svéra — Design Solutions Studio</title>
+    <!-- Google Fonts: Inter & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Flaticon UI Icons (Regular Rounded, Brands) -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <span class="preloader-text">svéra</span>
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom Cursor Elements -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo" aria-label="svéra home">
+                <img src="C:\Users\user\Music\file_0000000065907230bf447282d401ba29" alt="svéra logo" class="logo-img" onerror="this.style.display='none'">
+                <span class="logo-text">svéra<span class="logo-accent">.</span></span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+                <a href="#home" class="nav-link active"><i class="fi fi-rr-home"></i><span>Home</span></a>
+                <a href="#services" class="nav-link"><i class="fi fi-rr-palette"></i><span>Services</span></a>
+                <a href="#about" class="nav-link"><i class="fi fi-rr-info"></i><span>About</span></a>
+                <a href="#work" class="nav-link"><i class="fi fi-rr-briefcase"></i><span>Work</span></a>
+                <a href="#contact" class="nav-link"><i class="fi fi-rr-envelope"></i><span>Contact</span></a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section (Left Aligned) -->
+    <section id="home" class="hero">
+        <!-- Animated Background Shapes -->
+        <div class="hero-background" aria-hidden="true">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge reveal">
+                    <i class="fi fi-rr-sparkles"></i>
+                    <span>Premium Design Studio</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-line reveal">Design that</span>
+                    <span class="title-line title-gradient reveal">elevates brands</span>
+                    <span class="title-line reveal">beyond boundaries</span>
+                </h1>
+
+                <p class="hero-description reveal">
+                    svéra is a design solutions company crafting brand identity, digital experiences,
+                    and creative innovation that drive business growth and inspire audiences.
+                </p>
+
+                <div class="hero-buttons reveal">
+                    <a href="#services" class="btn btn-primary magnetic">
+                        <span>Explore Services</span>
+                        <i class="fi fi-rr-arrow-right"></i>
+                    </a>
+                    <a href="#work" class="btn btn-outline magnetic">
+                        <span>View Our Work</span>
+                        <i class="fi fi-rr-eye"></i>
+                    </a>
+                </div>
+
+                <div class="hero-stats reveal">
+                    <div class="stat">
+                        <span class="stat-number" data-count="250">0</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="98">0</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-label">Design Awards</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" aria-hidden="true">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal">Our Expertise</span>
+                <h2 class="section-title reveal">Design Services</h2>
+                <p class="section-subtitle reveal">Comprehensive creative solutions tailored to elevate your brand</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card reveal" data-tilt>
+                    <div class="service-card-inner">
+                        <div class="service-icon"><i class="fi fi-rr-badge"></i><span class="icon-shine"></span></div>
+                        <h3>Brand Identity</h3>
+                        <p>Strategic design and logo creation that builds memorable brand experiences.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fi fi-rr-arrow-small-right"></i></a>
+                    </div>
+                    <div class="service-card-bg"></div>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="service-card reveal" data-tilt>
+                    <div class="service-card-inner">
+                        <div class="service-icon"><i class="fi fi-rr-edit"></i><span class="icon-shine"></span></div>
+                        <h3>Graphic Design</h3>
+                        <p>Stunning visual communications for print and digital that captivate audiences.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fi fi-rr-arrow-small-right"></i></a>
+                    </div>
+                    <div class="service-card-bg"></div>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="service-card reveal" data-tilt>
+                    <div class="service-card-inner">
+                        <div class="service-icon"><i class="fi fi-rr-browser"></i><span class="icon-shine"></span></div>
+                        <h3>Web Design</h3>
+                        <p>Responsive, modern websites delivering seamless experiences across all devices.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fi fi-rr-arrow-small-right"></i></a>
+                    </div>
+                    <div class="service-card-bg"></div>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="service-card reveal" data-tilt>
+                    <div class="service-card-inner">
+                        <div class="service-icon"><i class="fi fi-rr-layout-fluid"></i><span class="icon-shine"></span></div>
+                        <h3>UI/UX Design</h3>
+                        <p>User-centered interface design combining aesthetics with superior functionality.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fi fi-rr-arrow-small-right"></i></a>
+                    </div>
+                    <div class="service-card-bg"></div>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="service-card reveal" data-tilt>
+                    <div class="service-card-inner">
+                        <div class="service-icon"><i class="fi fi-rr-cube"></i><span class="icon-shine"></span></div>
+                        <h3>3D & Visuals</h3>
+                        <p>Immersive 3D design and motion graphics that bring concepts to life.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fi fi-rr-arrow-small-right"></i></a>
+                    </div>
+                    <div class="service-card-bg"></div>
+                </div>
+                <!-- Service Card 6 -->
+                <div class="service-card reveal" data-tilt>
+                    <div class="service-card-inner">
+                        <div class="service-icon"><i class="fi fi-rr-bulb"></i><span class="icon-shine"></span></div>
+                        <h3>Creative Solutions</h3>
+                        <p>End-to-end creative strategy and innovative design thinking for complex challenges.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fi fi-rr-arrow-small-right"></i></a>
+                    </div>
+                    <div class="service-card-bg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-grid">
+            <div class="about-content">
+                <span class="section-tag reveal">Who We Are</span>
+                <h2 class="section-title reveal">Design-Led Thinking,<br>Results-Driven Approach</h2>
+                <p class="about-text reveal">At svéra, we believe that exceptional design is more than aesthetics—it's a strategic tool that drives business growth. Our multidisciplinary team combines creative excellence with technical expertise to deliver solutions that resonate.</p>
+                <p class="about-text reveal">From startups to Fortune 500 companies, we've helped brands across industries transform their vision into meaningful digital experiences.</p>
+                <div class="about-values reveal">
+                    <div class="value-item"><i class="fi fi-rr-diamond"></i><span>Quality First</span></div>
+                    <div class="value-item"><i class="fi fi-rr-time-fast"></i><span>On-Time Delivery</span></div>
+                    <div class="value-item"><i class="fi fi-rr-handshake"></i><span>Collaborative Process</span></div>
+                </div>
+            </div>
+            <div class="about-visual reveal">
+                <div class="about-image">
+                    <div class="about-image-inner">
+                        <i class="fi fi-rr-users-alt"></i>
+                        <span class="about-image-text">Our Creative Team</span>
+                    </div>
+                </div>
+                <div class="experience-badge">
+                    <span class="experience-number">7+</span>
+                    <span class="experience-label">Years of Excellence</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal">Portfolio</span>
+                <h2 class="section-title reveal">Featured Work</h2>
+                <p class="section-subtitle reveal">A selection of projects we're proud to showcase</p>
+            </div>
+            <div class="work-grid">
+                <div class="work-card reveal" data-tilt>
+                    <div class="work-image work-image-1"><i class="fi fi-rr-badge"></i></div>
+                    <div class="work-info"><span class="work-category">Brand Identity</span><h3>Aurora Tech Rebrand</h3><p>Complete brand overhaul for a leading tech company</p></div>
+                </div>
+                <div class="work-card reveal" data-tilt>
+                    <div class="work-image work-image-2"><i class="fi fi-rr-browser"></i></div>
+                    <div class="work-info"><span class="work-category">Web Design</span><h3>Nexus E-Commerce Platform</h3><p>Modern e-commerce experience with seamless UX</p></div>
+                </div>
+                <div class="work-card reveal" data-tilt>
+                    <div class="work-image work-image-3"><i class="fi fi-rr-layout-fluid"></i></div>
+                    <div class="work-info"><span class="work-category">UI/UX Design</span><h3>Fintech Mobile App</h3><p>Intuitive banking app with beautiful interface</p></div>
+                </div>
+                <div class="work-card reveal" data-tilt>
+                    <div class="work-image work-image-4"><i class="fi fi-rr-cube"></i></div>
+                    <div class="work-info"><span class="work-category">3D & Visuals</span><h3>Product Visualization</h3><p>Photorealistic 3D renders for product launch</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <span class="section-tag reveal">Get In Touch</span>
+                <h2 class="section-title reveal">Let's Create<br>Something Amazing</h2>
+                <p class="contact-description reveal">Have a project in mind? We'd love to hear about it. Let's discuss how we can bring your vision to life.</p>
+                <div class="contact-details reveal">
+                    <a href="mailto:hello@svera.studio" class="contact-item"><i class="fi fi-rr-envelope"></i><span>hello@svera.studio</span></a>
+                    <a href="tel:+15551234567" class="contact-item"><i class="fi fi-rr-phone-call"></i><span>+1 (555) 123-4567</span></a>
+                    <div class="contact-item"><i class="fi fi-rr-marker"></i><span>72 Design District, New York</span></div>
+                </div>
+                <div class="social-links reveal">
+                    <span>Follow us:</span>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fi fi-brands-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fi fi-brands-linkedin"></i></a>
+                    <a href="#" class="social-link" aria-label="Figma"><i class="fi fi-brands-figma"></i></a>
+                </div>
+            </div>
+            <form class="contact-form reveal" id="contactForm">
+                <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" required placeholder="John Doe"></div>
+                <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" required placeholder="john@example.com"></div>
+                <div class="form-group"><label for="service">Service Needed</label><select id="service" name="service"><option value="">Select a service</option><option value="branding">Brand Identity</option><option value="graphic">Graphic Design</option><option value="web">Web Design</option><option value="uiux">UI/UX Design</option><option value="3d">3D & Visuals</option><option value="creative">Creative Solutions</option></select></div>
+                <div class="form-group"><label for="message">Project Details</label><textarea id="message" name="message" rows="4" required placeholder="Tell us about your project..."></textarea></div>
+                <button type="submit" class="btn btn-primary submit-btn magnetic"><span>Send Message</span><i class="fi fi-rr-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">svéra<span class="logo-accent">.</span></span>
+                <p>Design solutions for the digital age</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fi fi-brands-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fi fi-brands-linkedin"></i></a>
+                <a href="#" aria-label="Figma"><i class="fi fi-brands-figma"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 svéra Studio. All rights reserved. | Crafted with <i class="fi fi-rr-heart"></i></p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fi fi-rr-angle-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
